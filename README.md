@@ -1,6 +1,4 @@
-# Alina Kholmovaia — personal site
-
-Dark, vaguely medieval.
+# Ali Kholmovaia — personal site
 
 ## Structure
 
