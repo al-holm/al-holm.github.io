@@ -9,7 +9,7 @@
 }
 
 :root {
-  --bg: #111;
+  --bg: #000;
   --bg-raised: #1a1a1a;
   --text: #d4d4d4;
   --text-dim: #aaa;
@@ -281,7 +281,9 @@ section {
   padding: 10px 0;
   border-bottom: 1px solid var(--border-light);
 }
-
+.header img, .section-title img {
+  mix-blend-mode: lighten;
+}
 .links-list a {
   color: var(--heading);
   text-decoration: none;
