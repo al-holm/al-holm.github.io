@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alina Kholmovaia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-line"></div>
+
+<header class="header">
+  <div class="header-creature">
+    <div class="icon-placeholder">icon</div>
+  </div>
+  <h1 class="site-title">Alina Kholmovaia</h1>
+  <p class="site-subtitle">Notes, mostly for myself</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#writing">Writing</a>
+  <a href="#cv">CV</a>
+  <a href="#links">Links</a>
+</nav>
+
+<main class="container">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-title">
+      <div class="creature-icon"><div class="icon-placeholder">icon</div></div>
+      About
+    </div>
+    <div class="section-sub"></div>
+
+    <div class="about-text">
+      <p>I work on language models — compressing them, editing their knowledge, and trying to understand what's going on inside. Currently doing a CS master's at TUM and working on model compression for child safety at Helmit.</p>
+
+      <p>Before this I studied philosophy at Saint Petersburg University, did interpretability research at King's College London, and worked on knowledge editing at hessian.AI. My bachelor's thesis at Marburg was on pruning-based approaches for reversing ROME edits.</p>
+
+      <p>This is where I write things down. Sometimes about research, sometimes about other stuff. It's mostly a notebook.</p>
+
+      <div class="aside-note">
+        If something here is wrong or interesting, feel free to tell me.
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section id="writing">
+    <div class="section-title">
+      <div class="creature-icon"><div class="icon-placeholder">icon</div></div>
+      Writing
+    </div>
+    <div class="section-sub"></div>
+
+    <!--
+    TO ADD A NEW POST:
+    1. Duplicate posts/_template.html, rename it (e.g. posts/my-new-post.html)
+    2. Write your post in the new file
+    3. Add an entry here linking to it (newest on top):
+
+    <div class="entry">
+      <a href="posts/my-new-post.html">
+        <div class="entry-date">Mar 5, 2026</div>
+        <div class="entry-title">Your Title Here</div>
+        <p class="entry-excerpt">A sentence or two about it.</p>
+        <span class="tag">some-tag</span>
+      </a>
+    </div>
+    -->
+
+    <div class="entry">
+      <a href="posts/one-mask.html">
+        <div class="entry-date">Feb 14, 2026</div>
+        <div class="entry-title">One Mask to Rule Them All</div>
+        <p class="entry-excerpt">ROME and MEMIT edits suppress rather than overwrite knowledge. We trained sparse binary masks that reverse edits on unseen examples, confirming original facts stay encoded.</p>
+        <span class="tag">knowledge editing</span>
+        <span class="tag">interpretability</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <div class="section-title">
+      <div class="creature-icon"><div class="icon-placeholder">icon</div></div>
+      CV
+    </div>
+    <div class="section-sub"></div>
+
+    <!-- EDUCATION -->
+    <div class="cv-block">
+      <div class="cv-block-title">Education</div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">M.Sc. Computer Science — TU Munich</span>
+          <span class="cv-date">Oct 2025 –</span>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">B.Sc. Computer Science — University of Marburg</span>
+          <span class="cv-date">2021 – 2025</span>
+        </div>
+        <div class="cv-detail">GPA: 1.3/1.0. Thesis: Investigating Pruning-Based Approaches for Reversing ROME Edits in LLMs (1.0)</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">B.A. Philosophy — Saint Petersburg University</span>
+          <span class="cv-date">2016 – 2020</span>
+        </div>
+        <div class="cv-detail">GPA: 4.7/5.0</div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="cv-block">
+      <div class="cv-block-title">Experience</div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Guided Research — EML Helmholtz Munich</span>
+          <span class="cv-date">Mar 2026 –</span>
+        </div>
+        <div class="cv-detail">Implicit personification in LLMs, with Kirill Bykov</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Working Student, ML Engineering — Helmit, Munich</span>
+          <span class="cv-date">Nov 2025 –</span>
+        </div>
+        <div class="cv-detail">On-device toxicity classification via reasoning distillation. 93% parameter reduction, outperforming the production model across all benchmarks.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Intern, AI-driven Knowledge Systems — Audi, Ingolstadt</span>
+          <span class="cv-date">Apr – Sep 2025</span>
+        </div>
+        <div class="cv-detail">Knowledge graphs and GraphRAG for production planning.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Student Assistant, Knowledge Editing — hessian.AI, Marburg</span>
+          <span class="cv-date">Nov 2023 – Feb 2025</span>
+        </div>
+        <div class="cv-detail">Weight distribution analysis of knowledge editing effects in LLMs.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Research Intern — King's College London</span>
+          <span class="cv-date">Aug – Oct 2023</span>
+        </div>
+        <div class="cv-detail">Effective density of feed-forward models. DAAD RISE Scholarship.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Student Assistant — AI in Medicine, University Hospital Marburg</span>
+          <span class="cv-date">Jun 2022 – Jul 2023</span>
+        </div>
+        <div class="cv-detail">Framework for experiments in trustworthy medical AI.</div>
+      </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="cv-block">
+      <div class="cv-block-title">Publications</div>
+
+      <div class="cv-item">
+        <div class="cv-role">One Mask to Rule Them All: On Hidden Facts after Editing and How to Find Them</div>
+        <div class="cv-detail">Ali Kholmovaia, Paul Youssef, Nandi Schoots, Christin Seifert. Under review, ACL 2026.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-role">When Human Oversight Fails in Medical AI</div>
+        <div class="cv-detail">N. Schlicker, C. Tepohl, A. Kholmovaia et al. npj Digital Medicine, under review (minor revisions).</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-role">The Propensity for Density in Feed-forward Models</div>
+        <div class="cv-detail">N. Schoots, A. Jackson, A. Kholmovaia, P. McBurney, M. Shanahan. ECAI 2024.</div>
+      </div>
+    </div>
+
+    <!-- SCHOLARSHIPS -->
+    <div class="cv-block">
+      <div class="cv-block-title">Scholarships & Awards</div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Friedrich-Ebert-Stiftung Scholarship</span>
+          <span class="cv-date">2025 – 2027</span>
+        </div>
+        <div class="cv-detail">Merit-based full scholarship for academic achievement and democratic engagement.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Hessian State Teaching Award</span>
+          <span class="cv-date">2025</span>
+        </div>
+        <div class="cv-detail">For Student Initiative AI-Lab: AI & Society.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">EXIST-Women Scholarship</span>
+          <span class="cv-date">2025</span>
+        </div>
+        <div class="cv-detail">Federal Founders' Support Program.</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">Cologne Gymnasial- und Stiftungs-Fund</span>
+          <span class="cv-date">2023 – 2024</span>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">DAAD Award for Outstanding International Students</span>
+          <span class="cv-date">2023</span>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-row">
+          <span class="cv-role">DAAD-STIBET Scholarship</span>
+          <span class="cv-date">2022</span>
+        </div>
+        <div class="cv-detail">For outstanding engagement during the war in Ukraine.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- LINKS -->
+  <section id="links">
+    <div class="section-title">
+      <div class="creature-icon"><div class="icon-placeholder">icon</div></div>
+      Links
+    </div>
+    <div class="section-sub"></div>
+
+    <ul class="links-list">
+      <li><a href="https://github.com/al-holm">GitHub</a> <span class="desc">— code</span></li>
+      <li><a href="#">Google Scholar</a> <span class="desc">— papers</span></li>
+      <li><a href="#">LinkedIn</a> <span class="desc">— the professional version</span></li>
+      <li><a href="mailto:modus.celarent@gmail.com">Email</a> <span class="desc">— for anything</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="ornament">· · ·</div>
+  <p>No cookies. No tracking.</p>
+  <p>© 2026</p>
+</footer>
+
+</body>
+</html>
